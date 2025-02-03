@@ -162,8 +162,8 @@ def main():
     current_mac = get_current_mac(interface)
     if current_mac == new_mac:
         print(f"Success! MAC address changed to {current_mac}.")
-    else:
-        print("Failed to change MAC address.")
+    # else:
+    #     print("Failed to change MAC address.")
 
     # Restore option
     if input("Do you want to restore the original MAC address? (y/n): ").lower() == 'y':
